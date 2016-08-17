@@ -18,7 +18,6 @@
 \doublespacing
 \usepackage[margin=1in]{geometry}
 \usepackage[notes, isbn=false, backend=biber]{biblatex-chicago}
-\let\footnote=\endnote
 \bibliography{../bibliography/thesisRefs.bib}
 \usepackage{csquotes}
 \author{Brandon Payne . 850226663\\
@@ -45,15 +44,8 @@ qplot(carat,price,data=dsmall, colour = color)
 \includegraphics[width=.9\linewidth]{color.png}
 
 This is a pretty graph in inline-org mode.  It doesn't go into the latex and pdf at this point.
-That is a super bummer.\footnote{ganzeboom1992}
+That is a super bummer.\footcite{ganzeboom1992}
 
 \nocite{*}
 
-\newpage
-\begingroup
-\parindent 0pt
-\parskip 2ex
-\def\enotesize{\normalsize}
-\theendnotes
-\endgroup
 \end{document}
