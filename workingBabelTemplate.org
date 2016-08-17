@@ -1,0 +1,26 @@
+#+STARTUP: inlineimages
+#+LaTeX_CLASS_OPTIONS: [koma, a4paper, utopia, 12pt]
+#+OPTIONS: toc:nil
+#+LATEX_HEADER: \usepackage{setspace}
+#+LATEX_HEADER: \doublespacing
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+TITLE: Proposal Please
+#+SUBTITLE: It's already late enough
+#+AUTHOR: Brandon Payne . 850226663\\
+#+DATE: 13 - August - 2016
+#+LATEX_HEADER: \usepackage[notes, isbn=false, backend=biber]{biblatex-chicago}
+#+LaTeX_HEADER: \let\footnote=\endnote
+#+LATEX_HEADER: \bibliography{../thesisRefs.bib}  
+#+LATEX_HEADER: \usepackage{endnotes,csquotes} 
+#+name: coloredCarots 
+#+BEGIN_SRC R :file color.png :results graphics :tangle yes :session R name=coloredCarots :exports both
+      library("ggplot2")
+      dsmall <-diamonds[sample(nrow(diamonds),100),]
+      qplot(carat,price,data=dsmall, colour = color)
+#+END_SRC
+
+#+RESULTS: coloredCarots
+[[file:color.png]]
+
+This is a pretty graph in inline-org mode.  It doesn't go into the latex and pdf at this point.
+That is a super bummer.[[footcite:ganzenboom1993][::23-25]]

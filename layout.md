@@ -1,1 +1,2 @@
-untitled.tex
+myTitle.tex
+workingBabelTemplate.tex
